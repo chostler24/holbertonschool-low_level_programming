@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# first we must get the file and set our variable to use later in our script
+
+# variables
+read -p "Enter Project Name: " projectName # this initializes the variable for us through read
+read -p "Enter Project ID: " projectID
+read -p "Enter Project URL: " projectURL
+read -p "Enter Project Description: " projectDescription
+read -p "Enter Author Name: " authorName
+read -p "Enter Author GitHub: " authorGitHub
+
+# WE can add more variables to the script, but that's someithng that can be added later
+
+file=./README.md
+
+# make sure we are printing our variabless to make sure we are getting the right information
+
+# echo "$projectName"
+# echo "$projectID"
+# echo "$projectURL"
+
+
+if [ -f "$file" ]
+then
+    printf "\n"
+            echo "File already exists! Updating and overwriting file..."
+	                sleep 1
+			                printf "\n"
+					                    echo "File updated!"
+							                        else
+										                        echo "File does not exist! Creating file..."
+													                            sleep 1
+																                                    echo "File created!"
+																				                                    fi
+
+printf "# $projectName - $projectID \n### <center>[Link to Project]($projectURL)</center>\n ## Description\n #### $projectDescription\n ---\n ## Author\n #### [$authorName]($authorGitHub)" > README.md
