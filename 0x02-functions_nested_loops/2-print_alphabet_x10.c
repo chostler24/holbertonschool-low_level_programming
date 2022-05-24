@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * main - prints 10 times the alphabet, followed by a new line
+ * Return: Always 0 (Success)
+ */
+
+void print_alphabet_x10(void)
+{
+char abc;
+int i;
+i = 0;
+while (i < 10)
+{
+abc = (97);
+while (abc <= 122)
+{
+_putchar(abc);
+abc++;
+}
+_putchar('\n');
+i++;
+}
+}
