@@ -8,7 +8,7 @@
 
 int _isalpha(int c)
 {
-while (c >= 65 && c >= 90 && c >= 97 && c <= 122)
+while (c >= 65 && c <= 90 && c >= 97 && c <= 122)
 {
 return (1);
 }
