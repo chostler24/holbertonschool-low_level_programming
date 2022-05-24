@@ -1,0 +1,11 @@
+#include "main.h"
+
+/**
+ * _isalpha - checks for alphabetic characters
+ * Return: 1 if c is a letter, lowercase or uppercase
+ * @c: variable
+ */
+
+int _isalpha(int c)
+{
+  return (
