@@ -3,6 +3,7 @@
 /**
   * print_square - function that prints a square,
   * followed by a new line.
+  * @size: variable
   * Return: none
   */
 
@@ -18,14 +19,11 @@ void print_square(int size)
 		int i;
 		int n;
 
-		for (i = 1; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
-			for (n = 1; n < size; n++)
+			for (n = 0; n < size; n++)
 			{
-				if (n == i)
-					_putchar(35);
-				else if (n < i)
-					_putchar(10);
+				_putchar(35);
 			}
 			_putchar(10);
 		}
