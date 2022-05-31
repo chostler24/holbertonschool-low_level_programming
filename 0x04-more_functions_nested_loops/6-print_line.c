@@ -16,7 +16,13 @@ void print_line(int n)
 
 	else
 	{
-		_putchar(95);
+		int i;
+
+		for (i = 1; i <= n; i++)
+		{
+			_putchar(95);
+		}
+
 		_putchar(10);
 	}
 
