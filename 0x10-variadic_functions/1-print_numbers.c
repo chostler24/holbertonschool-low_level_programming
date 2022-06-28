@@ -18,6 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	if (n == 0)
 	{
 		printf("\n");
+		return;
 	}
 
 	if (separator == NULL)
@@ -28,8 +29,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 
 		printf("\n");
-
 		va_end(args);
+		return;
 	}
 
 	i = 1;
