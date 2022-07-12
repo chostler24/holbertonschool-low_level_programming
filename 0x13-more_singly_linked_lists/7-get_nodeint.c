@@ -9,7 +9,7 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *lp = (listint_t *)head;
+	listint_t *lp = head;
 
 	unsigned int nodenum;
 
