@@ -3,7 +3,7 @@
 /**
   * clear_bit - fucntion that sets bit value to 0.
   * @n: given integer
-  * @ index: yuh
+  * @index: yuh
   * Return: 1 or -1
   */
 
